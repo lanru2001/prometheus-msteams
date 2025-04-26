@@ -1,0 +1,26 @@
+# config.yaml
+---
+replicaCount: 1
+image:
+  #repository: quay.io/prometheusmsteams/prometheus-msteams
+  repository: 720954101072.dkr.ecr.us-east-1.amazonaws.com/dlframe/quay/prometheusmsteams/prometheus-msteams
+  tag: v1.5.1
+
+connectors:
+# in alertmanager, this will be used as http://prometheus-msteams:2000/alertmanager
+- alertmanager: https://goodddyyyy.webhook.office.com/webhookb2/84
+
+# extraEnvs is useful for adding extra environment variables such as proxy settings
+extraEnvs: []
+
+container:
+  additionalArgs:
+    - -debug
+
+# Enable metrics for prometheus operator
+metrics:
+  serviceMonitor:
+    enabled: true
+    additionalLabels:
+      release: prometheus # change this accordingly
+    scrapeInterval: 30s

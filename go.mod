@@ -9,7 +9,7 @@ require (
 	github.com/cyphar/filepath-securejoin v0.2.2 // indirect
 	github.com/go-kit/kit v0.9.1-0.20191018122245-9f5354e50d79
 	github.com/gobwas/glob v0.2.3 // indirect
-	github.com/google/go-cmp v0.5.9
+	github.com/google/go-cmp v0.7.0
 	github.com/hashicorp/go-msgpack v0.5.5 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.2
 	github.com/huandu/xstrings v1.3.1 // indirect
@@ -21,7 +21,7 @@ require (
 	github.com/peterbourgon/ff v1.7.1
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/alertmanager v0.25.0
-	github.com/prometheus/client_golang v1.15.0
+	github.com/prometheus/client_golang v1.22.0
 	go.opencensus.io v0.24.0
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/apimachinery v0.18.2 // indirect
